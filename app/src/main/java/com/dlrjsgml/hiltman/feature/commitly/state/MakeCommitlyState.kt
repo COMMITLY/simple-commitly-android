@@ -1,4 +1,10 @@
 package com.dlrjsgml.hiltman.feature.commitly.state
 
-class MakeCommiltyState {
-}
+data class MakeCommitlyState(
+    val data: CommitlyInfo? = null,
+    val isLoading: Boolean = false,
+)
+
+data class CommitlyInfo(
+    val gptResponse: String
+)

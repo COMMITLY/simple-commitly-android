@@ -1,4 +1,6 @@
 package com.dlrjsgml.hiltman.feature.commitly.effect
 
-class MakeCommitlyEffect {
+sealed interface MakeCommitlyEffect {
+    data object Success: MakeCommitlyEffect
+    data object Failed: MakeCommitlyEffect
 }
